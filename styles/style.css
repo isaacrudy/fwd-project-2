@@ -1,0 +1,152 @@
+/* Some structure and basic CSS taken from class material */
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic (CALLED IN NORMALIZE.CSS)
+# Base
+# Components
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+
+html {
+	scroll-padding-top: 4.5rem;
+	scroll-behavior: smooth;
+}
+
+/* Typography
+--------------------------------------------- */
+body {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #282828;
+	background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: Georgia, Times, "Times New Roman", serif;
+	margin: .5em 0;
+	font-size: 1.75rem;
+}
+
+p {
+	margin: 1.5em 0;
+}
+
+
+/* Links
+--------------------------------------------- */
+a,
+a:visited { 
+	color: #008000;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+	text-decoration: underline;
+}
+
+a:focus {
+	outline: 1px dotted;
+}
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+.site-wrapper {
+	max-width: 120rem;
+	margin: 0 auto;
+}
+
+/* Header --------------------------------------------- */
+
+header {
+    background-color: #ffffff;
+    box-shadow: 0.125rem 0.125rem 0.125rem #282828;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10000;
+}
+
+.site-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+#nav-links {
+    display: hidden;
+    background-color: #ddd;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: -100%;
+    transition: top .5s ease;
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+    margin-top: 0;
+    padding: 1rem;
+}
+
+#nav-links.toggled {
+    display: block;
+    top: 0;
+}
+
+#close-menu {
+    display: none;
+}
+
+@media (min-width: 30rem) {
+    #menu-toggle-button {
+        display: none;
+    }
+
+    #nav-links {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        justify-content: space-between;
+        width: 75%;
+        background-color: #ffffff;
+    }
+
+    .site-navigation {
+        justify-content: space-evenly;
+    }
+}
+
+
+/* Main ----------------------------------------------- */
+
+
+
+/* Footer --------------------------------------------- */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-top: 1px solid #282828;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
