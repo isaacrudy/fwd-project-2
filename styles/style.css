@@ -25,6 +25,8 @@ body {
 	line-height: 1.5;
 	color: #282828;
 	background-color: #ffffff;
+    font-size: clamp(1rem, 1.5vw, 2rem);
+
 }
 
 h1,
@@ -36,6 +38,15 @@ h6 {
 	font-family: Georgia, Times, "Times New Roman", serif;
 	margin: .5em 0;
 	font-size: 1.75rem;
+    color: #2154a4;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 7rem);
+}
+
+h2 {
+    font-size: clamp(1.5rem, 3vw, 5rem);
 }
 
 p {
@@ -47,14 +58,15 @@ p {
 --------------------------------------------- */
 a,
 a:visited { 
-	color: #008000;
+	color: #2154a4;
 	text-decoration: none;
 }
 
 a:hover,
 a:focus,
 a:active {
-	text-decoration: underline;
+	text-decoration: none;
+    color: black;
 }
 
 a:focus {
@@ -86,6 +98,16 @@ header {
     flex-direction: row;
     justify-content: space-between;
     padding: 1rem;
+}
+
+#nav-logo {
+    width: 5rem;
+    height:5rem;
+    margin-left: 1rem;
+}
+
+.menu-toggle-button {
+    color: #2154a4;
 }
 
 #nav-links {
@@ -127,19 +149,15 @@ header {
     }
 
     .site-navigation {
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
 }
-
-
-/* Main ----------------------------------------------- */
-
 
 
 /* Footer --------------------------------------------- */
 
 footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     right: 0;
     left: 0;

@@ -1,0 +1,129 @@
+/* Contents */
+    /* Main */
+        /* Hero Video */
+        /* About Section*/
+        /* Other Pages Section */
+        /* Subscription */
+
+
+/* Main -------------------------------------------- */
+
+/* Hero Video */
+
+.hero-video {
+    position: relative;
+    top: 5rem;
+    text-align: center;
+    width: 100%;
+}
+
+.hero-video video {
+    max-height: 40rem;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+	object-position: center;
+}
+
+.hero-video .landing-title {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    left: 5%;
+    color: white;
+    backdrop-filter: blur(20px);
+	border-radius: 25%;
+}
+
+/* About Section */
+
+.about {
+    padding: 5rem 1rem 1rem 1rem;
+    margin: 0 10%;
+}
+
+.about h2 {
+    text-align: center;
+}
+
+/* Other Pages Section */
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+.links h2 {
+    text-align: center;
+}
+
+.links img {
+    max-height: 30rem;
+    width: 100%;
+    object-fit: cover;
+	object-position: center;
+}
+
+.links a {
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.links a div {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    background-color: #2154a4;
+    transition: all .5s smooth;
+}
+
+.links a div h3 {
+    color: white;
+    padding-left: 1rem;
+}
+
+.links a div:hover {
+    top: 50%;
+}
+
+/* Subscription */
+.subscription {
+    display: grid;
+    grid-template-areas: '. head .'
+                        '. sub .';
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.subscription h2 {
+    grid-area: head;
+    text-align: center;
+}
+
+
+
+.subscription form {
+    grid-area: sub;
+    padding: 1rem;
+    margin: 1rem;
+    max-width: 30rem;
+}
+
+.subscription form #submit-button {
+    display: block;
+    width: 30%;
+    margin: 0 35%;
+    background-color: #2154a4;
+    color: white;
+    margin-top: 1rem;
+    border-radius: 15%;
+}
+
+.subscription form input {
+    margin-top: 1rem;
+}
+
+.subscription form fieldset {
+    border: 2px solid #2154a4;
+}
