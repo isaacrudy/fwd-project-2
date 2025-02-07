@@ -1,39 +1,11 @@
 /* Contents */
     /* Main */
-        /* Hero Video */
         /* About Section*/
         /* Other Pages Section */
         /* Subscription */
 
 
 /* Main -------------------------------------------- */
-
-/* Hero Video */
-
-.hero-slide {
-    position: relative;
-    top: 5rem;
-    text-align: center;
-    width: 100%;
-}
-
-.hero-slide #main-hero-slide {
-    max-height: 40rem;
-    width: 100%;
-    display: block;
-    object-fit: cover;
-	object-position: center;
-}
-
-.hero-slide .page-title {
-    position: absolute;
-    top: 20%;
-    right: 5%;
-    left: 5%;
-    color: white;
-    backdrop-filter: blur(20px);
-	border-radius: 25%;
-}
 
 /* About Section */
 
