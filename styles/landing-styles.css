@@ -10,14 +10,14 @@
 
 /* Hero Video */
 
-.hero-video {
+.hero-slide {
     position: relative;
     top: 5rem;
     text-align: center;
     width: 100%;
 }
 
-.hero-video video {
+.hero-slide #main-hero-slide {
     max-height: 40rem;
     width: 100%;
     display: block;
@@ -25,7 +25,7 @@
 	object-position: center;
 }
 
-.hero-video .landing-title {
+.hero-slide .page-title {
     position: absolute;
     top: 20%;
     right: 5%;
