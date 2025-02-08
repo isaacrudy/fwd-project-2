@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Learn about British Columbia, the south western province of Canada.">
     <title>Home</title>
 
     <!-- CSS Styles -->
-    <link rel="stylesheet" href="styles/normalize-fwd.css" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/landing-styles.css" />
+    <link rel="stylesheet" href="styles/normalize-fwd.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/landing-styles.css">
 
     <!-- Favicon Links -->
-    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="manifest" href="site.webmanifest" />
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Font import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    >
   </head>
   <body>
+    <a href="#main-content" class="screen-reader-text">Skip to Main Content</a>
     <header>
       <nav class="site-navigation">
         <a href="index.html" id="nav-logo">
@@ -75,14 +87,15 @@
 
     <main>
       <div class="hero-slide">
-        <video autoplay="true" loop muted id="main-hero-slide">
-          <source src="media/bc-video.mp4" />
+        <video autoplay loop muted id="main-hero-slide">
+          <source src="media/bc-video.mp4">
           Your browser does not support the video element.
         </video>
+        <p class="screen-reader-text">A video of a calm shore, plants and mountains visible in the back</p>
         <h1 class="page-title">Beautiful British Columbia</h1>
       </div>
 
-      <section class="about">
+      <section class="about" id="main-content">
         <h2>About</h2>
         <p>
           Explore this expansive province of Canada, known for it's natural
@@ -101,19 +114,21 @@
       <section class="links">
         <h2>Explore</h2>
         <a href="landmarks.html">
+          <p class="screen-reader-text">Click here to go to the landmarks page</p>
           <img
             src="images/road-to-mountain.jpg"
             alt="Street road near green and yellow trees leading to large snowy mountain."
-          />
+          >
           <div class="description">
             <h3>Landmarks</h3>
           </div>
         </a>
         <a href="activities.html">
+          <p class="screen-reader-text">Click here to go to the activities page</p>
           <img
             src="images/boats-and-science-world.jpg"
             alt="An assortment of small boats in the water with Science World in the background."
-          />
+          >
           <div class="description">
             <h3>Activities</h3>
           </div>
@@ -127,13 +142,13 @@
           <fieldset>
             <legend>Contact Information</legend>
             <label for="name">Name:</label>
-            <input type="text" id="name" />
-            <br />
+            <input type="text" id="name">
+            <br>
             <label for="email">Email:</label>
-            <input type="email" id="email" />
+            <input type="email" id="email">
           </fieldset>
 
-          <input type="button" value="submit" id="submit-button" />
+          <input type="button" value="subscribe" id="submit-button">
         </form>
       </section>
     </main>

@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Learn about the different landmarks to visit in BC, including enormous mountains and calm lakes."
+    >
     <title>Landmarks</title>
 
     <!-- CSS Styles -->
-    <link rel="stylesheet" href="styles/normalize-fwd.css" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/landmarks-styles.css" />
+    <link rel="stylesheet" href="styles/normalize-fwd.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/landmarks-styles.css">
 
     <!-- Favicon Links -->
-    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="manifest" href="site.webmanifest" />
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Font import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    >
   </head>
   <body>
+    <a href="#main-content" class="screen-reader-text">Skip to Main Content</a>
     <header>
       <nav class="site-navigation">
         <a href="index.html" id="nav-logo">
@@ -78,13 +91,13 @@
           src="images/road-to-mountain.jpg"
           alt="Street road near green and yellow trees leading to large snowy mountain."
           id="main-hero-slide"
-        />
+        >
         <h1 class="page-title">Landmarks</h1>
       </div>
       <div class="page-grid">
         <section class="table-of-contents">
           <h3>Jump to...</h3>
-          <table>
+          <table role="presentation">
             <tbody>
               <tr>
                 <td>Mountains</td>
@@ -121,7 +134,7 @@
             </tbody>
           </table>
         </section>
-        <div class="contents">
+        <div class="contents" id="main-content">
           <section class="landmarks-group">
             <h2>Mountains</h2>
             <article class="landmark-item" id="fairweather">
@@ -130,7 +143,7 @@
               <img
                 src="images/mountain-logo.png"
                 alt="A small, black and white, image of a mountain."
-              />
+              >
               <p class="landmark-description">
                 Mount Fairweather sits on the boarder of British Columbia and
                 Alaska at a monumental 4,653m of elevation. It is one of the
@@ -152,7 +165,7 @@
               <img
                 src="images/mountain-logo.png"
                 alt="A small, black and white, image of a mountain."
-              />
+              >
               <p class="landmark-description">
                 Mount Robson is the beautiful center of one of BCs earliest
                 parks. It is the largest mountain of the canadian Rockies and
@@ -173,7 +186,7 @@
               <img
                 src="images/mountain-logo.png"
                 alt="A small, black and white, image of a mountain."
-              />
+              >
               <p class="landmark-description">
                 Mount Waddington is perhaps less well known than the previous
                 two, though it rises to a height of 4016m, taller even than
@@ -191,26 +204,26 @@
           <section class="landmarks-group">
             <h2>Lakes</h2>
             <article class="landmark-item" id="emerald">
-                <h3>Emerald Lake</h3>
-                <!-- Found at https://freeicons.io/tropical-icon-set-31224/lake-river-water-wave-icon-1131005 -->
-                <img src="images/lake-logo.png" alt="A small drawing of water." />
-                <p class="landmark-description">
-                  Enclosed by mountains, this freshwater lake is known for it's
-                  stunning beauty. Named after the blue-ish green color of the
-                  water, Emerald Lake sits on the easter edge of British Columbia.
-                  Popular with hikers of all skill levels, it is sure to be well
-                  worth the effort. For more information about the lake,
-                  surrounding area, and wildlife, check out
-                  <a
-                    href="https://en.wikipedia.org/wiki/Emerald_Lake_(British_Columbia)"
-                    >the wikipedia page</a
-                  >.
-                </p>
-              </article>
+              <h3>Emerald Lake</h3>
+              <!-- Found at https://freeicons.io/tropical-icon-set-31224/lake-river-water-wave-icon-1131005 -->
+              <img src="images/lake-logo.png" alt="A small drawing of water." >
+              <p class="landmark-description">
+                Enclosed by mountains, this freshwater lake is known for it's
+                stunning beauty. Named after the blue-ish green color of the
+                water, Emerald Lake sits on the easter edge of British Columbia.
+                Popular with hikers of all skill levels, it is sure to be well
+                worth the effort. For more information about the lake,
+                surrounding area, and wildlife, check out
+                <a
+                  href="https://en.wikipedia.org/wiki/Emerald_Lake_(British_Columbia)"
+                  >the wikipedia page for Emerald Lake</a
+                >.
+              </p>
+            </article>
             <article class="landmark-item" id="garibaldi">
               <h3>Garibaldi Lake</h3>
               <!-- Found at https://freeicons.io/tropical-icon-set-31224/lake-river-water-wave-icon-1131005 -->
-              <img src="images/lake-logo.png" alt="A small drawing of water." />
+              <img src="images/lake-logo.png" alt="A small drawing of water." >
               <p class="landmark-description">
                 Images of Garibaldi Lake are distinctly recognisable by the
                 sheer brilliance of the water. Just under 10 square kilometers
@@ -228,7 +241,7 @@
             <article class="landmark-item" id="okanagan">
               <h3>Okanagan Lake</h3>
               <!-- Found at https://freeicons.io/tropical-icon-set-31224/lake-river-water-wave-icon-1131005 -->
-              <img src="images/lake-logo.png" alt="A small drawing of water." />
+              <img src="images/lake-logo.png" alt="A small drawing of water." >
               <p class="landmark-description">
                 Okanagan Lake was formed through the movements of glaciers.
                 Carved into the land, the lake has an approximate area of 350
@@ -237,7 +250,7 @@
                 of Kelowna, and is often visited by boaters who want to explore
                 the waves. Check out
                 <a href="https://en.wikipedia.org/wiki/Okanagan_Lake"
-                  >the wikipedia page</a
+                  >the wikipedia page for Okanagan Lake</a
                 >
                 for more about this lake.
               </p>
@@ -251,7 +264,7 @@
               <img
                 src="images/city-logo.png"
                 alt="A small drawing of towers representing a city."
-              />
+              >
               <p class="landmark-description">
                 Though British Columbia's capital, Victoria, and largest city by
                 population, Vancouver, are the most well known cities within
@@ -262,7 +275,7 @@
                 fun. Check out
                 <a
                   href="https://en.wikipedia.org/wiki/List_of_cities_in_British_Columbia"
-                  >their wikipedia pages</a
+                  >the wikipedia pages for BC cities</a
                 >
                 for more information about the cities of British Columbia.
               </p>
@@ -273,7 +286,7 @@
               <img
                 src="images/volcano-logo.png"
                 alt="A small drawing of a volcano erupting."
-              />
+              >
               <p class="landmark-description">
                 Within British Columbia's many mountains lie many dormant, and
                 some not so dormant, volcanoes. Though even many residents don't

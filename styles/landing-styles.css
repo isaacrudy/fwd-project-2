@@ -41,13 +41,17 @@
     padding-bottom: 1rem;
 }
 
+.links a:focus {
+    border: 1rem solid #2154a4;
+    border-bottom: 0;
+}
+
 .links a div {
     position: absolute;
     bottom: 1rem;
     left: 0;
     right: 0;
     background-color: #2154a4;
-    transition: all .5s smooth;
 }
 
 .links a div h3 {
@@ -84,8 +88,8 @@
 
 .subscription form #submit-button {
     display: block;
-    width: 30%;
-    margin: 0 35%;
+    width: 40%;
+    margin: 0 30%;
     background-color: #2154a4;
     color: white;
     margin-top: 1rem;

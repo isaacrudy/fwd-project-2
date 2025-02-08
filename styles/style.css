@@ -35,7 +35,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: Georgia, Times, "Times New Roman", serif;
+    font-family: "Radio Canada", serif;
 	margin: .5em 0;
 	font-size: 1.75rem;
     color: #2154a4;
@@ -63,7 +63,6 @@ p {
 a,
 a:visited { 
 	color: #2154a4;
-	text-decoration: none;
 }
 
 a:hover,
@@ -115,7 +114,6 @@ header {
 }
 
 #nav-links {
-    display: hidden;
     background-color: #ddd;
     position: fixed;
     left: 0;
@@ -127,6 +125,10 @@ header {
     padding-left: 0;
     margin-top: 0;
     padding: 1rem;
+}
+
+#nav-links li a {
+    text-decoration: none;
 }
 
 #nav-links.toggled {
