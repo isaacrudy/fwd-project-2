@@ -1,77 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Activities</title>
 
     <!-- CSS Styles -->
-     <link rel="stylesheet" href="styles/normalize-fwd.css">
-     <link rel="stylesheet" href="styles/style.css">
-     
+    <link rel="stylesheet" href="styles/normalize-fwd.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/activity-styles.css" />
+
     <!-- Favicon Links -->
     <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="manifest" href="site.webmanifest" />
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="site-navigation">
-            <a href="index.html" id="nav-logo">
-                <svg
-                  id="tree-image"
-                  xmlns="http://www.w3.org/2000/svg"
-                  version="1.1"
-                  viewBox="0 0 512 512"
-                >
-                  <!-- Generator: Adobe Illustrator 29.2.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 116)  -->
-                  <defs>
-                    <style>
-                      .st0 {
-                        fill: #fff;
-                        font-family: MyriadPro-Regular, "Myriad Pro";
-                        font-size: 200px;
-                      }
-      
-                      .st1 {
-                        fill: #2154a4;
-                        fill-rule: evenodd;
-                      }
-                    </style>
-                  </defs>
-                  <path
-                    class="st1"
-                    d="M236.3,512v-109.4s-20.4-4.6-35-18.6-8.5-8.6-8.5-8.6c0,0-78.8,36.2-132-40.6s16.5-134.7,16.5-134.7c0,0-24.7-30.8-1.7-77.5,23-46.7,61.3-37.2,61.3-37.2,0,0,25-82.4,117.8-85.4s123.6,85.4,123.6,85.4c0,0,44.5.8,63.4,41.2s-3.9,73.5-3.9,73.5c0,0,50.9,44.6,26.8,113.7s-142.3,61.6-142.3,61.6c0,0-2.8,10.1-19.8,19.8s-23.7,7.3-23.7,7.3v109.4h-42.7Z"
-                  />
-                  <text class="st0" transform="translate(143.1 314.7)">
-                    <tspan x="0" y="0">BC</tspan>
-                  </text>
-                </svg>
-              </a>
-            <svg id="menu-toggle-button" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"/></svg>
-            <ul id="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="landmarks.html">Landmarks</a></li>
-                <li><a href="activities.html">Activities</a></li>
-                <li><a href="credits.html">Credits</a></li>
-                <li><a id="close-menu">Close</a></li>
-            </ul>
-        </nav>
+      <nav class="site-navigation">
+        <a href="index.html" id="nav-logo">
+          <svg
+            id="tree-image"
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            viewBox="0 0 512 512"
+          >
+            <!-- Generator: Adobe Illustrator 29.2.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 116)  -->
+            <defs>
+              <style>
+                .st0 {
+                  fill: #fff;
+                  font-family: MyriadPro-Regular, "Myriad Pro";
+                  font-size: 200px;
+                }
+
+                .st1 {
+                  fill: #2154a4;
+                  fill-rule: evenodd;
+                }
+              </style>
+            </defs>
+            <path
+              class="st1"
+              d="M236.3,512v-109.4s-20.4-4.6-35-18.6-8.5-8.6-8.5-8.6c0,0-78.8,36.2-132-40.6s16.5-134.7,16.5-134.7c0,0-24.7-30.8-1.7-77.5,23-46.7,61.3-37.2,61.3-37.2,0,0,25-82.4,117.8-85.4s123.6,85.4,123.6,85.4c0,0,44.5.8,63.4,41.2s-3.9,73.5-3.9,73.5c0,0,50.9,44.6,26.8,113.7s-142.3,61.6-142.3,61.6c0,0-2.8,10.1-19.8,19.8s-23.7,7.3-23.7,7.3v109.4h-42.7Z"
+            />
+            <text class="st0" transform="translate(143.1 314.7)">
+              <tspan x="0" y="0">BC</tspan>
+            </text>
+          </svg>
+        </a>
+        <svg
+          id="menu-toggle-button"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 50 50"
+          width="50px"
+          height="50px"
+        >
+          <path
+            d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"
+          />
+        </svg>
+        <ul id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="landmarks.html">Landmarks</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="credits.html">Credits</a></li>
+          <li><a id="close-menu">Close</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-
+      <div class="hero-slide">
+        <img
+          src="images/boats-and-science-world.jpg"
+          alt="An assortment of small boats in the water with Science World in the background."
+          id="main-hero-slide"
+        />
+        <h1 class="page-title">Activities</h1>
+      </div>
+      <section class="quote">
+        <!-- Quote found at https://www.brainyquote.com/quotes/wilhelm_von_humboldt_141400?src=t_activity -->
+        <blockquote>
+          "True enjoyment comes from activity of the mind and exercise of the
+          body; the two are ever united."
+          <cite>Wilhelm von Humboldt</cite>
+        </blockquote>
+      </section>
+      <section class="activity-list">
+        <h2>Warm</h2>
+        <div class="tab-list">
+          <article class="activity-item">
+            <h3>Hiking</h3>
+            <p>
+              BC is full of hiking trails of greatly varying difficulty. The
+              provincial parks contain many hikes to mountain peaks and views
+              that would stun even the most experienced hiker.
+            </p>
+            <p>
+              <a href="https://www.alltrails.com/canada/british-columbia"
+                >AllTrails</a
+              >
+              is a good resource you can use to find good hikes in your area. Be
+              sure that the difficulty is of an appropriate level and that you
+              pack water and provisions to enjoy the hikes confortably. For more
+              tips and tricks to enjoy your hiking adventure, visit
+              <a href="https://bcparks.ca/plan-your-trip/things-to-do/hiking/"
+                >the BC parks website</a
+              >.
+            </p>
+          </article>
+          <article class="activity-item">
+            <h3>Surfing</h3>
+            <p>
+              Surfing can be difficult in Canada's colder climate, but BC is the
+              place to do it. Tofino is Canada's surfing capital, and the waves
+              are waiting! Located on the west side of Vancouver Island, Tofino
+              is a great place to enjoy the warmer months of the year. Check out
+              <a href="https://tourismtofino.com/activity/surfing/"
+                >Tofino's website</a
+              >
+              to learn more about how you can start.
+            </p>
+            <p>
+              If you are new to surfing, there are a merriade of surfing schools
+              that love to help beginner surfers take their first wave.
+            </p>
+          </article>
+          <article class="activity-item">
+            <h3>Museums and Galleries</h3>
+            <p>
+              The cities and towns of BC are filled with museums and galleries
+              that range from the beautiful
+              <a
+                href="https://www.vanartgallery.bc.ca/?gad_source=1&gclid=CjwKCAiAnpy9BhAkEiwA-P8N4kJmncVRPfB2EbxCMv30OIzI0qSo6b7bbMm4HCEI1Mo-kQrTZnhTFxoCUvsQAvD_BwE"
+                >Vancouver Art Gallery</a
+              >
+              to the more unique, like the
+              <a href="https://www.wcra.org/">Squamish Railway Museum</a>.
+            </p>
+            <p>
+              Whatever your interest there is sure to be a museum or gallery
+              where you can relax, learn, and admire. If you have trouble
+              deciding which to visit, check out
+              <a
+                href="https://www.tripadvisor.ca/Attractions-g154922-Activities-c49-British_Columbia.html"
+                >tripadvisor's list of museums in BC</a
+              >
+              for some inspiration.
+            </p>
+          </article>
+          <article class="activity-item">
+            <h3>Markets</h3>
+            <p>
+              If you're looking for fresh produce, artisan wears, or interesting
+              bobbles, BC has a number of markets and shopping centers where you
+              can explore and brouse to your hearts content.
+            </p>
+            <p>
+              <a href="https://bcfarmersmarket.org/">The BC Farmers Markets</a>
+              are a great place to get fresh food, and they often have many
+              vendors for lunches and snacks. They tend to be in more populous
+              areas, but check there website to find one near you!
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="activity-list">
+        <h2>Cold</h2>
+        <div class="tab-list">
+          <article class="activity-item">
+            <h3>Skiing and Snowboarding</h3>
+            <p>
+              Whether you enjoy gliding down mountains with your legs in pizza
+              formation or soaring off jumps on a snowboard, BC is home to some
+              of the best skiing and snowboarding mountain resorts in the world.
+              While Whistler is certainly the most famous internationally, there
+              are many more for you to choose from. The
+              <a href="https://www.hellobc.com/ski-resorts/">hellobc website</a>
+              can help guide you to the one you like best.
+            </p>
+            <p>
+              Make sure you have everything you need to enjoy BC's coldest
+              regions confortably. That means wearing appropriate clothes,
+              planning your routes, and making sure you stay hydrated and fed.
+            </p>
+          </article>
+          <article class="activity-item">
+            <h3>Theatre</h3>
+            <p>
+              BC's cities are home to many theatres and stadiums. Whether you
+              are looking for a comedy or improv show, the orchestra, or a
+              Shakespearean play, you are sure to find something to enjoy here.
+              <a
+                href="https://vancouver.ca/parks-recreation-culture/cultural-and-performance-spaces.aspx"
+                >Vancouver</a
+              >
+              has many such performance spaces and you can check many of them
+              out from the cities website.
+            </p>
+            <p>
+              While many theatrical experiences are costly, there are some that
+              allow you to enjoy the show for a less steep price. Check out
+              what's available at
+              <a
+                href="https://www.eventbrite.ca/d/canada--british-columbia/theatre-tickets/"
+                >the event brite website</a
+              >
+            </p>
+          </article>
+          <article class="activity-item">
+            <h3>Snowshoeing</h3>
+            <p>
+              For those who don't enjoy skiing or snowboarding, mountain resorts
+              are often covered in spectacular showshoeing and cross-country
+              skiing trails during the winter months. Many of these trails are
+              free to walk, but be sure to check before you set out. Most
+              mountains will be able to rent out snowshoes, but there are also
+              places within Vancouver and other cities if you want to head in
+              prepared.
+            </p>
+            <p>
+              To check out more about snowshoeing trails and how to get started,
+              explore
+              <a href="https://www.hellobc.com/things-to-do/snowshoeing/"
+                >the hellobc website</a
+              >.
+            </p>
+          </article>
+          <article class="activity-item">
+            <h3>Skating</h3>
+            <p>
+              There are over 200 ice skating rinks in BC during the winter,
+              while many are within Vancouver, most offer easy skate rentals and
+              a fun time both indoors and outdoors.
+            </p>
+            <p>
+              Whether it's a romantic date, or a fun time out with friends,
+              skating is sure to be a full of laughs and fun times. Find a
+              skating rink near you with
+              <a href="https://arena-guide.com/locations/british-columbia/"
+                >the arena guide website</a
+              >
+              and remember, everyone falls sometimes, there is nothing to be
+              embarrased about!
+            </p>
+          </article>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <p><a href="mailto:isaac.rudy@gmail.com">Contact Us!</a></p>
-        <p><a target="_blank" href="https://icons8.com/icon/3096/menu">Hamburger Menu</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></p>
-        <p>Copywrite 2025</p>
+      <p><a href="mailto:isaac.rudy@gmail.com">Contact Us!</a></p>
+      <p>
+        <a target="_blank" href="https://icons8.com/icon/3096/menu"
+          >Hamburger Menu</a
+        >
+        icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+      </p>
+      <p>Copywrite 2025</p>
     </footer>
 
     <!-- Javascript -->
     <script src="script/menu-toggle.js"></script>
-</body>
+  </body>
 </html>
