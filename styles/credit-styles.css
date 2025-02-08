@@ -1,0 +1,29 @@
+/* Contents */
+/* Main */
+    /* Credit table */
+
+/* Main--------------------------------------------------------------- */
+
+.hero-slide {
+    margin-bottom: 5rem;
+}
+
+/* Credit table */
+
+.credit-table {
+    text-align: center;
+}
+
+.credit-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.credit-table table thead {
+    font-weight: bolder;
+    border-bottom: 1px solid black;
+}
+
+.credit-table table tbody tr {
+    border-bottom: 1px solid black;
+}
