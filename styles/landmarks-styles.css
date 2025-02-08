@@ -1,0 +1,91 @@
+/* Contents */
+/* Main */
+/* Table of Contents*/
+/* Landmark Articles */
+/* Grid layout */
+
+/* Main--------------------------------------------------------------- */
+
+/* Table of Contents */
+
+.table-of-contents {
+  padding-top: 5rem;
+  margin: 0 10%;
+  align-items: center;
+  position: relative;
+  left: 0;
+  right: 0;
+  justify-items: center;
+}
+
+.table-of-contents table {
+  align-self: center;
+}
+
+.table-of-contents table tbody tr td {
+  padding: 0.5rem;
+}
+
+/* Landmark Articles */
+
+.landmark-item {
+  display: grid;
+  grid-template-areas:
+    "title"
+    "image"
+    "description";
+  justify-items: center;
+}
+
+@media (min-width: 30em) {
+  .landmark-item {
+    grid-template-areas:
+      "image title"
+      "image description";
+    align-items: center;
+  }
+
+  .landmark-item img {
+    max-width: 10rem;
+  }
+
+  .landmarks-group {
+    padding-left: 1rem;
+  }
+}
+
+.landmark-item h3 {
+  grid-area: title;
+}
+
+.landmark-item img {
+  grid-area: image;
+  max-width: 5rem;
+}
+
+.landmark-item p {
+  grid-area: description;
+  max-width: 60rem;
+  padding: 1rem;
+}
+
+/* Grid layout */
+
+@media (min-width: 30em) {
+  .page-grid {
+    display: grid;
+    grid-template-areas: "table content";
+  }
+
+  .table-of-contents {
+    grid-area: table;
+    height: fit-content;
+    position: sticky;
+    top: 5rem;
+  }
+
+  .contents {
+    grid-area: content;
+    padding-top: 15%;
+  }
+}

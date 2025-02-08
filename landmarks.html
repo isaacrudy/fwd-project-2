@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landmarks</title>
 
     <!-- CSS Styles -->
-     <link rel="stylesheet" href="styles/normalize-fwd.css">
-     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/normalize-fwd.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/landmarks-styles.css" />
 
     <!-- Favicon Links -->
     <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
@@ -15,63 +16,293 @@
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="manifest" href="site.webmanifest" />
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="site-navigation">
-            <a href="index.html" id="nav-logo">
-                <svg
-                  id="tree-image"
-                  xmlns="http://www.w3.org/2000/svg"
-                  version="1.1"
-                  viewBox="0 0 512 512"
-                >
-                  <!-- Generator: Adobe Illustrator 29.2.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 116)  -->
-                  <defs>
-                    <style>
-                      .st0 {
-                        fill: #fff;
-                        font-family: MyriadPro-Regular, "Myriad Pro";
-                        font-size: 200px;
-                      }
-      
-                      .st1 {
-                        fill: #2154a4;
-                        fill-rule: evenodd;
-                      }
-                    </style>
-                  </defs>
-                  <path
-                    class="st1"
-                    d="M236.3,512v-109.4s-20.4-4.6-35-18.6-8.5-8.6-8.5-8.6c0,0-78.8,36.2-132-40.6s16.5-134.7,16.5-134.7c0,0-24.7-30.8-1.7-77.5,23-46.7,61.3-37.2,61.3-37.2,0,0,25-82.4,117.8-85.4s123.6,85.4,123.6,85.4c0,0,44.5.8,63.4,41.2s-3.9,73.5-3.9,73.5c0,0,50.9,44.6,26.8,113.7s-142.3,61.6-142.3,61.6c0,0-2.8,10.1-19.8,19.8s-23.7,7.3-23.7,7.3v109.4h-42.7Z"
-                  />
-                  <text class="st0" transform="translate(143.1 314.7)">
-                    <tspan x="0" y="0">BC</tspan>
-                  </text>
-                </svg>
-              </a>
-            <svg id="menu-toggle-button" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"/></svg>
-            <ul id="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="landmarks.html">Landmarks</a></li>
-                <li><a href="activities.html">Activities</a></li>
-                <li><a href="credits.html">Credit</a></li>
-                <li><a id="close-menu">Close</a></li>
-            </ul>
-        </nav>
+      <nav class="site-navigation">
+        <a href="index.html" id="nav-logo">
+          <svg
+            id="tree-image"
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            viewBox="0 0 512 512"
+          >
+            <!-- Generator: Adobe Illustrator 29.2.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 116)  -->
+            <defs>
+              <style>
+                .st0 {
+                  fill: #fff;
+                  font-family: MyriadPro-Regular, "Myriad Pro";
+                  font-size: 200px;
+                }
+
+                .st1 {
+                  fill: #2154a4;
+                  fill-rule: evenodd;
+                }
+              </style>
+            </defs>
+            <path
+              class="st1"
+              d="M236.3,512v-109.4s-20.4-4.6-35-18.6-8.5-8.6-8.5-8.6c0,0-78.8,36.2-132-40.6s16.5-134.7,16.5-134.7c0,0-24.7-30.8-1.7-77.5,23-46.7,61.3-37.2,61.3-37.2,0,0,25-82.4,117.8-85.4s123.6,85.4,123.6,85.4c0,0,44.5.8,63.4,41.2s-3.9,73.5-3.9,73.5c0,0,50.9,44.6,26.8,113.7s-142.3,61.6-142.3,61.6c0,0-2.8,10.1-19.8,19.8s-23.7,7.3-23.7,7.3v109.4h-42.7Z"
+            />
+            <text class="st0" transform="translate(143.1 314.7)">
+              <tspan x="0" y="0">BC</tspan>
+            </text>
+          </svg>
+        </a>
+        <svg
+          id="menu-toggle-button"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 50 50"
+          width="50px"
+          height="50px"
+        >
+          <path
+            d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"
+          />
+        </svg>
+        <ul id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="landmarks.html">Landmarks</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="credits.html">Credits</a></li>
+          <li><a id="close-menu">Close</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-
+      <div class="hero-slide">
+        <img
+          src="images/road-to-mountain.jpg"
+          alt="Street road near green and yellow trees leading to large snowy mountain."
+          id="main-hero-slide"
+        />
+        <h1 class="page-title">Landmarks</h1>
+      </div>
+      <div class="page-grid">
+        <section class="table-of-contents">
+          <h3>Jump to...</h3>
+          <table>
+            <tbody>
+              <tr>
+                <td>Mountains</td>
+                <td><a href="#fairweather">Mount Fairweather</a></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><a href="#robson">Mount Robson</a></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><a href="#waddington">Mount Waddington</a></td>
+              </tr>
+              <tr>
+                <td>Lakes</td>
+                <td><a href="#garibaldi">Garibaldi Lake</a></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><a href="#okanagan">Okanagan Lake</a></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><a href="#emerald">Emerald Lake</a></td>
+              </tr>
+              <tr>
+                <td>Other</td>
+                <td><a href="#cities">Cities</a></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><a href="#volcanoes">Volcanoes</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <div class="contents">
+          <section class="landmarks-group">
+            <h2>Mountains</h2>
+            <article class="landmark-item" id="fairweather">
+              <h3>Mount Fairweather</h3>
+              <!-- Found at https://freeicons.io/common-style-icons-18/mountain-icon-18533-->
+              <img
+                src="images/mountain-logo.png"
+                alt="A small, black and white, image of a mountain."
+              />
+              <p class="landmark-description">
+                Mount Fairweather sits on the boarder of British Columbia and
+                Alaska at a monumental 4,653m of elevation. It is one of the
+                largest coastal mountain in the world, and certainly the largest
+                in British columbia. The mountain was given the name,
+                Fairweather, by Captain James Cook, and the earliest people have
+                managed to climb it in recorded history was in 1931. It remains
+                a beautiful sight to behold and many travel to the northern
+                parts of British Columbia to enjoy the amazing view. To learn
+                more about Mount Fairweather, you can visit the
+                <a href="https://www.nps.gov/places/mount-fairweather.htm"
+                  >national park service website</a
+                >.
+              </p>
+            </article>
+            <article class="landmark-item" id="robson">
+              <h3>Mount Robson</h3>
+              <!-- Found at https://freeicons.io/common-style-icons-18/mountain-icon-18533-->
+              <img
+                src="images/mountain-logo.png"
+                alt="A small, black and white, image of a mountain."
+              />
+              <p class="landmark-description">
+                Mount Robson is the beautiful center of one of BCs earliest
+                parks. It is the largest mountain of the canadian Rockies and
+                boasts amazing views as well as wildlife. Before it was called
+                Mount Robson, the Secwepemc people called it Tsyécelcten, which
+                loosely translates to 'Mountain of the Spiral Road'. Today,
+                Mount Robson is part of one of the worlds largest protected
+                areas, its beauty drawing in visitors from around the world. If
+                you would like to learn more about Mount Robson, check out
+                <a href="https://bcparks.ca/mount-robson-park/#about-this-park"
+                  >the BC parks website</a
+                >.
+              </p>
+            </article>
+            <article class="landmark-item" id="waddington">
+              <h3>Mount Waddington</h3>
+              <!-- Found at https://freeicons.io/common-style-icons-18/mountain-icon-18533-->
+              <img
+                src="images/mountain-logo.png"
+                alt="A small, black and white, image of a mountain."
+              />
+              <p class="landmark-description">
+                Mount Waddington is perhaps less well known than the previous
+                two, though it rises to a height of 4016m, taller even than
+                Mount Robson. It sits on the west coast of BC and is the largest
+                mountain, completely within BC, along that coast. Once called
+                the mystery mountain, it was renamed after Alfred Waddington.
+                Exlore the history of Mount Waddington at
+                <a
+                  href="https://www.thecanadianencyclopedia.ca/en/article/mount-waddington"
+                  >the canadian encyclopedia website</a
+                >.
+              </p>
+            </article>
+          </section>
+          <section class="landmarks-group">
+            <h2>Lakes</h2>
+            <article class="landmark-item" id="garibaldi">
+              <h3>Garibaldi Lake</h3>
+              <!-- Found at https://freeicons.io/tropical-icon-set-31224/lake-river-water-wave-icon-1131005 -->
+              <img src="images/lake-logo.png" alt="A small drawing of water." />
+              <p class="landmark-description">
+                Images of Garibaldi Lake are distinctly recognisable by the
+                sheer brilliance of the water. Just under 10 square kilometers
+                in area, the lake is home too many species of wildlife, ranging
+                from the smallest of squirrel, to the largest of canadian bears,
+                though the later are less common. As part of a national park,
+                Garibaldi Lake is surrounded by many hikes, giving visitors
+                amazing views and spectacular sights. To learn more about
+                Garibaldi Lake, visit
+                <a href="https://bcparks.ca/garibaldi-park/#about-this-park"
+                  >the BC parks website</a
+                >.
+              </p>
+            </article>
+            <article class="landmark-item" id="okanagan">
+              <h3>Okanagan Lake</h3>
+              <!-- Found at https://freeicons.io/tropical-icon-set-31224/lake-river-water-wave-icon-1131005 -->
+              <img src="images/lake-logo.png" alt="A small drawing of water." />
+              <p class="landmark-description">
+                Okanagan Lake was formed through the movements of glaciers.
+                Carved into the land, the lake has an approximate area of 350
+                square kilometers, and is often incredibly deep very near the
+                shore. The lake borders several communities, including the city
+                of Kelowna, and is often visited by boaters who want to explore
+                the waves. Check out
+                <a href="https://en.wikipedia.org/wiki/Okanagan_Lake"
+                  >the wikipedia page</a
+                >
+                for more about this lake.
+              </p>
+            </article>
+            <article class="landmark-item" id="emerald">
+              <h3>Emerald Lake</h3>
+              <!-- Found at https://freeicons.io/tropical-icon-set-31224/lake-river-water-wave-icon-1131005 -->
+              <img src="images/lake-logo.png" alt="A small drawing of water." />
+              <p class="landmark-description">
+                Enclosed by mountains, this freshwater lake is known for it's
+                stunning beauty. Named after the blue-ish green color of the
+                water, Emerald Lake sits on the easter edge of British Columbia.
+                Popular with hikers of all skill levels, it is sure to be well
+                worth the effort. For more information about the lake,
+                surrounding area, and wildlife, check out
+                <a
+                  href="https://en.wikipedia.org/wiki/Emerald_Lake_(British_Columbia)"
+                  >the wikipedia page</a
+                >.
+              </p>
+            </article>
+          </section>
+          <section class="landmarks-group">
+            <h2>Other Landmarks</h2>
+            <article class="landmark-item" id="cities">
+              <h3>Cities</h3>
+              <!-- Found at https://freeicons.io/business-6/business-and-finance-city-corporation-buildings-icon-42067 -->
+              <img
+                src="images/city-logo.png"
+                alt="A small drawing of towers representing a city."
+              />
+              <p class="landmark-description">
+                Though British Columbia's capital, Victoria, and largest city by
+                population, Vancouver, are the most well known cities within
+                it's borders, there are over 50 more cities. Sizes of these
+                cities vary wildly, from Vancouver's over half a million
+                population, to Greenwood's less than a thousand. Despite this,
+                the cities make cross province travel a lot more interesting and
+                fun. Check out
+                <a
+                  href="https://en.wikipedia.org/wiki/List_of_cities_in_British_Columbia"
+                  >their wikipedia pages</a
+                >
+                for more information about the cities of British Columbia.
+              </p>
+            </article>
+            <article class="landmark-item" id="volcanoes">
+              <h3>Volcanoes</h3>
+              <!-- Found at https://freeicons.io/common-style-icons-19/volcano-icon-18679 -->
+              <img
+                src="images/volcano-logo.png"
+                alt="A small drawing of a volcano erupting."
+              />
+              <p class="landmark-description">
+                Within British Columbia's many mountains lie many dormant, and
+                some not so dormant, volcanoes. Though even many residents don't
+                realize this, BC lies within the Pacific 'ring of fire', and has
+                and will experience many volcanic eruptions. A prime example is
+                Mount Garibaldi, the mountain neighboring the similarly named
+                lake. For some more information about BC's volcanoes, check out
+                <a href="https://chis.nrcan.gc.ca/volcano-volcan/can-vol-en.php"
+                  >the government of Canada's website</a
+                >.
+              </p>
+            </article>
+          </section>
+        </div>
+      </div>
     </main>
 
     <footer>
-        <p><a href="mailto:isaac.rudy@gmail.com">Contact Us!</a></p>
-        <p><a target="_blank" href="https://icons8.com/icon/3096/menu">Hamburger Menu</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></p>
-        <p>Copywrite 2025</p>
+      <p><a href="mailto:isaac.rudy@gmail.com">Contact Us!</a></p>
+      <p>
+        <a target="_blank" href="https://icons8.com/icon/3096/menu"
+          >Hamburger Menu</a
+        >
+        icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+      </p>
+      <p>Copywrite 2025</p>
     </footer>
 
     <!-- Javascript -->
     <script src="script/menu-toggle.js"></script>
-</body>
+  </body>
 </html>
